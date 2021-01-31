@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,WACE,WAAY,CACZ,gBACF","file":"main.eb3b170d.chunk.css","sourcesContent":[".card-size {\r\n  width: 450px;\r\n  padding: 5px 30px;\r\n}\r\n"]}
