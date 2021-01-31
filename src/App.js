@@ -45,6 +45,7 @@ function App() {
         <div className="card-size">
           <Search onSubmit={(city) => fetchWeather(city)} />
           {isLoading && <p>'Loading......'</p>}
+          {hasError && <p>"SomeThing went wrong"</p>}
           {JSON.stringify(weatherInfo) !== "{}" && (
             <div key={weatherInfo.key} className="row">
               <CityCard
@@ -57,7 +58,6 @@ function App() {
                 lat={weatherInfo.lat}
                 lon={weatherInfo.lon}
               />
-              {hasError && <p>"SomeThing went wrong"</p>}
             </div>
           )}
         </div>
